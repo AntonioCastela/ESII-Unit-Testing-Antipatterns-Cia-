@@ -6,19 +6,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CarroTest {
 
+    // Enumerator
+    // Test per method
     @Test
     public void test1(){
         Carro c = new Carro();
         c.setMarca("BMW");
-        assertEquals("BMW",c.getMarca());
+        assertEquals("BMW", c.getMarca());
     }
 
+    // Enumerator
+    // Test per method
     @Test
     public void test2(){
         Carro c = new Carro();
         assertEquals(1.25,c.costChangeWheels(1));
     }
 
+    // Enumerator
+    // Anal Probe
     @Test
     void test3(){
         Carro privateObject = new Carro();
